@@ -19,18 +19,20 @@ function NavBar({ setUser, user }) {
   return (
 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
 <Container>
-  <Navbar.Brand style={{fontWeight:"700"}}  to ="/">exercises </Navbar.Brand>
+  <Navbar.Brand style={{fontWeight:"700"}}  to ="/">Exercises-App</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
-     
-
-    <Nav.Link ><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/trainees">users</Link></Nav.Link>
-    </Nav> 
+      <Nav.Link ><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/">Home Page</Link></Nav.Link>
+      <Nav.Link ><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/trainers">Trainers Content</Link></Nav.Link>
+      <Nav.Link ><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/yoga-tutorials">General Exercises</Link></Nav.Link>
+      <Nav.Link ><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/add-tutorial">Upload Videos</Link></Nav.Link>
+      <Nav.Link ><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/trainees">More Resources</Link></Nav.Link>
+    </Nav>
     <Nav>
-      <Nav.Link >welcome {(user.name).toUpperCase()}</Nav.Link>
-     <Nav.Link  > <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/profile">profile</Link></Nav.Link>
-      <Nav.Link ><Button onClick={handleLogoutClick}>logout</Button></Nav.Link>
+      <Nav.Link >Welcome Back ! {(user.name).toUpperCase()}</Nav.Link>
+     <Nav.Link  > <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/profile">My Profile Page</Link></Nav.Link>
+      <Nav.Link ><Button onClick={handleLogoutClick}>Exit</Button></Nav.Link>
        </Nav>
   </Navbar.Collapse>
 </Container>
