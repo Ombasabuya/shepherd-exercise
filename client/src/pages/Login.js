@@ -8,7 +8,7 @@ function Login({ onLogin }) {
     <div className="container">
     <div className='row justify-content-center'>
   <div className='col-md-6 mt-4' style={{  backgroundColor:"#dede"  }} >
-  <h2 className='text-center mt-4 font-weight-bold'>EExercise  lessons </h2>
+  <h2 className='text-center mt-4 font-weight-bold'>Exercise lessons </h2>
   <div className='alert alert-info rounded-0'>Exercise  lessons </div>
        {
         showLogin
