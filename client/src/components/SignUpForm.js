@@ -44,7 +44,7 @@ const [isLoading, setIsLoading] = useState(false);
 
   <div className="login-card"> 
     <div className='card'>
-<h6 className='alert alert-info rounded-0'>Create  account</h6>
+<h6 className='alert alert-info rounded-0'>Create  Account</h6>
       <div className='card-body'>
         <form  onSubmit={handleSubmit} method="post">
         <div className='form-group'>
