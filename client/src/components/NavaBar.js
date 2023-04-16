@@ -23,15 +23,15 @@ function NavBar({ setUser, user }) {
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
-      <Nav.Link ><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/">Home Page</Link></Nav.Link>
-      <Nav.Link ><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/trainers">Trainers Content</Link></Nav.Link>
-      <Nav.Link ><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/yoga-tutorials">General Exercises</Link></Nav.Link>
-      <Nav.Link ><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/add-tutorial">Upload Videos</Link></Nav.Link>
-      <Nav.Link ><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/trainees">More Resources</Link></Nav.Link>
+      <Nav.Link ><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/">Home</Link></Nav.Link>
+      <Nav.Link ><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/trainers">Contacts</Link></Nav.Link>
+      <Nav.Link ><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/yoga-tutorials">Exercises Tutorials </Link></Nav.Link>
+      <Nav.Link ><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/add-tutorial">Upload</Link></Nav.Link>
+      <Nav.Link ><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/trainees">Trainees</Link></Nav.Link>
     </Nav>
     <Nav>
-      <Nav.Link >Welcome Back ! {(user.name).toUpperCase()}</Nav.Link>
-     <Nav.Link  > <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/profile">My Profile Page</Link></Nav.Link>
+      <Nav.Link >Welcome Back {(user.name).toUpperCase()}</Nav.Link>
+     <Nav.Link  > <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/profile">User Profile </Link></Nav.Link>
       <Nav.Link ><Button onClick={handleLogoutClick}>Exit</Button></Nav.Link>
        </Nav>
   </Navbar.Collapse>
