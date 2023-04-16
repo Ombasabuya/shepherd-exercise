@@ -68,7 +68,7 @@ onDelete(tutorial.id)};}}
     </Card>
     </div>
    ))):(
-    <div className={'alert alert-primary rounded-0'}>No exercise videos found</div>
+    <div className={'alert alert-primary rounded-0'}>No  videos found !</div>
    )}
       </div>
    </Container>
