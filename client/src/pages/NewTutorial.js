@@ -44,15 +44,15 @@ function  NewTutorial ({user,trainers}) {
           <hr></hr>
         <form onSubmit={handleSubmit}  method='post'>
             <div className='form-group'>
-            <label>title</label>
+            <label>Title</label>
             <input  onChange={(e) => setName(e.target.value)} type="text" id='name' value={name} required className='form-control'/> 
             </div>
           <div className='form-group'>
-            <label>description</label>
+            <label>Descriptions</label>
             <textarea placeholder='Max length 1000 characters' maxLength={1000} onChange={(e) => setDescription(e.target.value)} type="text" id='description' value={description} required className='form-control'></textarea>
             </div>
             <div className='form-group'>
-            <label>videos</label>
+            <label>Videos</label>
             <input  required onChange={(e) => setUrl(e.target.value)} value={url} type="url" placeholder='https://www.youtube.com/embed/HbeEgw1WPo8' id='url'  className='form-control' />
             </div>
             <div className='form-group'>
@@ -66,7 +66,7 @@ function  NewTutorial ({user,trainers}) {
             trainers.map((trainer) => (
              <option value={trainer.id} key={trainer.id}>{trainer.name}</option>
              ))):(
-            <option value={""}>No found</option>
+            <option value={""}>No Found</option>
             )}
             </select>
             </div>
