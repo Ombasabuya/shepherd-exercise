@@ -23,7 +23,7 @@ function Profile({user}) {
                 
                 </div>
                 <div className="d-flex">
-                  <p className="small "> <strong>Roles</strong>  <span>Trainee</span> </p>
+                  <p className="small "> <strong>Roles</strong>  <span>Users</span> </p>
                   </div>
                 <div className="d-flex">
                   <p className="small "> <strong>Username</strong>  <span>{user.username}</span> </p>
@@ -34,7 +34,7 @@ function Profile({user}) {
                   <div className="d-flex ">
                   <p className="small"> <strong>Trainer:</strong>  <span> </span> </p>
                   </div>
-               <div className='alert alert-info rounded-0'> booked lessons.</div>
+               <div className='alert alert-info rounded-0'>Bookings</div>
                 </div>
               </div>
             </div>
